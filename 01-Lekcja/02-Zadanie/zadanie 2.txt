@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double liczba;
+
+    cout << "Podaj liczbe rzeczywista: ";
+    cin >> liczba;
+    cout.setf(ios::fixed);
+    cout.precision(1);
+    cout << "Dokladnosc do 1 miejsca: " << liczba << endl;
+    cout.precision(3);
+    cout << "Dokladnosc do 3 miejsc:  " << liczba << endl;
+    cout.precision(5);
+    cout << "Dokladnosc do 5 miejsc:  " << liczba << endl;
+
+    return 0;
+}
