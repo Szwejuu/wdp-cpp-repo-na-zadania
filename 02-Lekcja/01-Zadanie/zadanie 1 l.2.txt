@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "Podaj trzy liczby całkowite: ";
+    cin >> a >> b >> c;
+
+    cout << "Suma wszystkich trzech liczb: " << a + b + c << endl;
+    cout << "Różnica pierwszej i drugiej liczby: " << a - b << endl;
+    cout << "Iloczyn pierwszej i trzeciej liczby: " << a * c << endl;
+    cout << "Iloraz trzeciej i drugiej liczby: " << (double)c / b << endl;
+
+    return 0;
+}

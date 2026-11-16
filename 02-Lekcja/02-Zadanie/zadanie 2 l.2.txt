@@ -1,0 +1,18 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+    double ocena1, ocena2, ocena3, ocena4, ocena5;
+    cout << "Podaj pięć ocen: ";
+    cin >> ocena1 >> ocena2 >> ocena3 >> ocena4 >> ocena5;
+
+    double srednia = (ocena1 + ocena2 + ocena3 + ocena4 + ocena5) / 5.0;
+
+    // Ustawienie wyświetlania do dwóch miejsc po przecinku
+    cout << fixed << setprecision(2);
+    cout << "Średnia ocen wynosi: " << srednia << endl;
+
+    return 0;
+}

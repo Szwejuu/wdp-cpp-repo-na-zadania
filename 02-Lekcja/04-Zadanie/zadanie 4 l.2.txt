@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int calkowiteSekundy;
+    cout << "Podaj liczbę sekund: ";
+    cin >> calkowiteSekundy;
+
+    int minuty = calkowiteSekundy / 60;
+    int sekundy = calkowiteSekundy % 60;
+
+    cout << calkowiteSekundy << " sekund to " << minuty << " minut(y) i " << sekundy << " sekund(y)." << endl;
+
+    return 0;
+}
