@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "Podaj dwie liczby całkowite: ";
+    cin >> a >> b;
+
+    if (a > b) {
+        cout << "Większa liczba: " << a << endl;
+        cout << "Mniejsza liczba: " << b << endl;
+        cout << "Relacja: " << a << " > " << b << endl;
+    } else if (a < b) {
+        cout << "Większa liczba: " << b << endl;
+        cout << "Mniejsza liczba: " << a << endl;
+        cout << "Relacja: " << a << " < " << b << endl;
+    } else {
+        cout << "Obie liczby są równe." << endl;
+        cout << "Relacja: " << a << " == " << b << endl;
+    }
+
+    return 0;
+}

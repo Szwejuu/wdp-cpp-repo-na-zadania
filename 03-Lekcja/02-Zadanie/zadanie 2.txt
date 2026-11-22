@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    char znak;
+
+    cin >> a >> b;
+    cin >> znak;
+
+    if (znak == '+') {
+        cout << a + b;
+    }
+    else if (znak == '-') {
+        cout << a - b;
+    }
+    else if (znak == '*') {
+        cout << a * b;
+    }
+    else if (znak == '/') {
+        if (b != 0)
+            cout << a / b;
+        else
+            cout << "Nie mozna dzielic przez zero";
+    }
+    else if (znak == '%') {
+        if (b != 0)
+            cout << a % b;
+        else
+            cout << "Nie mozna dzielic przez zero";
+    }
+    else {
+        cout << "Nieprawidlowy znak";
+    }
+
+    return 0;
+}

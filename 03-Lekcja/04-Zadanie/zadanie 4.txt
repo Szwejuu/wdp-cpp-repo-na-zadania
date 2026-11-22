@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c, d, e;
+    int ile = 0;
+    float srednia;
+
+    cout << "Podaj 5 ocen: ";
+    cin >> a >> b >> c >> d >> e;
+
+    srednia = (a + b + c + d + e) / 5.0;
+
+    if (a == 1) ile++;
+    if (b == 1) ile++;
+    if (c == 1) ile++;
+    if (d == 1) ile++;
+    if (e == 1) ile++;
+
+    cout << "Srednia: " << srednia << endl;
+    cout << "Liczba ocen niedostatecznych: " << ile;
+
+    return 0;
+}
